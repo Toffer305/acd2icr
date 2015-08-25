@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ACD2ICR.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.1.163</Value>
+    </Setting>
+    <Setting Name="DBName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">icresponse</Value>
+    </Setting>
+    <Setting Name="DBUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">remoter</Value>
+    </Setting>
+    <Setting Name="DBPass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">A9m1n</Value>
+    </Setting>
+    <Setting Name="ACDLoginUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/Login.php?ret_link=%2FQueueManager%2Fagent_ctl.php&amp;type=notLogged&amp;ccsForm=Login</Value>
+    </Setting>
+    <Setting Name="ACDActivityMonitorUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/activity_monitor.php</Value>
+    </Setting>
+    <Setting Name="ACDGoBusy" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/ReadyBusy.php?paused=0</Value>
+    </Setting>
+    <Setting Name="ACDGoReady" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://acd2.ststelecom.com/QueueManager/ReadyBusy.php?paused=1</Value>
+    </Setting>
+    <Setting Name="DBInsertRecord" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO acd2icr (name, phone, status, lastcall, callstoday, missedtoday, date) VALUES (?name, ?phone, ?status, ?lastcall, ?callstoday, ?missedtoday, CURDATE())</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
